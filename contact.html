@@ -28,46 +28,51 @@
   </div>
 </nav>
 
-<div class="row justify-content-center">
-  <div class="col-md-8 col-lg-6 animate__animated animate__fadeIn">
-    
-    <h1 class="fw-bold text-center mb-3">Contact Us</h1>
-    <p class="text-center text-muted mb-4">Have a question? Send us a message below.</p>
+<main class="container my-5 flex-grow-1">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6 animate__animated animate__fadeIn">
+      
+      <h1 class="fw-bold text-center mb-3">Contact Us</h1>
+      <p class="text-center text-muted mb-4">Have a question? Send us a message below.</p>
 
-    <div class="alert alert-info alert-dismissible fade show" role="alert">
-      <strong>Please note!</strong> Personal information will only be temporarily stored until the message gets successfully sent. All individuals will remain anonymous.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Please note!</strong> Personal information will only be temporarily stored until the message gets successfully sent. All individuals will remain anonymous.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="card shadow-sm border-0 p-4">
+        <form onsubmit="return false;">
+          <div class="mb-3">
+            <label for="fullName" class="form-label fw-semibold">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter name here..." required>
+          </div>
+
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="e.g. jane@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label fw-semibold">Subject</label>
+            <select class="form-select" id="subject">
+              <option selected>Product Inquiry</option>
+              <option value="1">Order Support</option>
+              <option value="2">General Feedback</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 fw-semibold">Send Message</button>
+        </form>
+      </div>
+
     </div>
-
-    <div class="card shadow-sm border-0 p-4">
-      <form onsubmit="return false;">
-        <div class="mb-3">
-          <label for="fullName" class="form-label fw-semibold">Full Name</label>
-          <input type="text" class="form-control" id="fullName" placeholder="Enter name here..." required>
-        </div>
-
-        <div class="mb-3">
-          <label for="emailAddress" class="form-label fw-semibold">Email Address</label>
-          <input type="email" class="form-control" id="emailAddress" placeholder="e.g. jane@example.com" required>
-        </div>
-
-        <div class="mb-3">
-          <label for="subject" class="form-label fw-semibold">Subject</label>
-          <select class="form-select" id="subject">
-            <option selected>Product Inquiry</option>
-            <option value="1">Order Support</option>
-            <option value="2">General Feedback</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <label for="message" class="form-label fw-semibold">Message</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary w-100 fw-semibold">Send Message</button>
-      </form>
-    </div>
+  </div>
+</main>
 
   </div>
 </div>
